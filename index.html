@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Blur Wiki</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- <link rel="shortcut icon" sizes="196x196" href="images/logo.png"> -->
+  
+  <!-- style -->
+  <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+  <!-- build:css css/styles/app.min.css -->
+  <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <div id="aside" class="app-aside fade nav-dropdown black">
+    <!-- fluid app aside -->
+    <div class="navside dk" data-layout="column">
+      <div class="navbar no-radius">
+        <!-- brand -->
+        <a href="index.html" class="navbar-brand">
+        	<div data-ui-include="'images/logo.svg'"></div>
+        	<img src="images/ml.png" alt="." class="hide">
+        </a>
+        <!-- / brand -->
+      </div>
+      <div data-flex class="hide-scroll">
+          <nav class="scroll nav-stacked nav-stacked-rounded nav-color">
+            
+            <ul class="nav" data-ui-nav>
+              <li class="nav-header hidden-folded">
+                <span class="text-xs">Main</span>
+              </li>
+              <li>
+                <a class="b-primary" data-toggle="tab" data-target="#tab_1">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">apps</i>
+                  </span>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+              <li class="nav-header hidden-folded">
+                <span class="text-xs">Wiki</span>
+              </li>
+              <li>
+                <a class="b-primary">
+                  <!-- <span class="nav-caret">
+                    <i class="material-icons md-24"></i>
+                  </span> -->
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">directions_car</i>
+                  </span>
+                  <span class="nav-text">Cars</span>
+                </a>
+                <ul class="nav-sub nav-mega nav-mega-3">
+                  <li class="nav-header hidden-folded m-t">
+                    <span class="text-xs">Regular</span>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#tab_3">
+                      <span class="nav-text">Class: A</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#tab_b">
+                      <span class="nav-text">Class: B</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#tab_c">
+                      <span class="nav-text">Class: C</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#tab_d">
+                      <span class="nav-text">Class: D</span>
+                    </a>
+                  </li>
+                  <li class="nav-header hidden-folded m-t">
+                    <span class="text-xs">Legendary</span>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#tab_legends">
+                      <span class="nav-text">Legend</span>
+                    </a>
+                  </li>
+                  <li class="nav-header hidden-folded m-t">
+                    <span class="text-xs">Single Player</span>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#tab_boss">
+                      <span class="nav-text">Black List</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="b-primary">
+                  <!-- <span class="nav-caret">
+                    <i class="material-icons md-24"></i>
+                  </span> -->
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">directions</i>
+                  </span>
+                  <span class="nav-text">Maps</span>
+                </a>
+                <ul class="nav-sub nav-mega nav-mega-3">
+                  <li class="nav-header hidden-folded m-t">
+                    <span class="text-xs">Race</span>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_1">
+                      <span class="nav-text">Amboy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_2">
+                      <span class="nav-text">Barcelona Gracia</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_3">
+                      <span class="nav-text">Barcelona Oval</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_4">
+                      <span class="nav-text">Brighton</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_5">
+                      <span class="nav-text">Hackney</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_6">
+                      <span class="nav-text">Hollywood Hills</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_7">
+                      <span class="nav-text">LA Docks</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_8">
+                      <span class="nav-text">LA Downtown</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_9">
+                      <span class="nav-text">LA River</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_10">
+                      <span class="nav-text">Mount Haruna</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_11">
+                      <span class="nav-text">NY Dumbo</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_12">
+                      <span class="nav-text">SanFran Russian Hill</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_13">
+                      <span class="nav-text">SanFran Sausalito</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_14">
+                      <span class="nav-text">Tokyo Shutoko</span>
+                    </a>
+                  </li>
+                  <li class="nav-header hidden-folded m-t">
+                    <span class="text-xs">Motor Mash</span>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_15">
+                      <span class="nav-text">Amboy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_16">
+                      <span class="nav-text">Barcelona</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" data-target="#map_17">
+                      <span class="nav-text">LA Downtown</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="b-primary" data-toggle="tab" data-target="#modshop">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">star</i>
+                  </span>
+                  <span class="nav-text">Mods</span>
+                </a>
+              </li>
+              <li>
+                <a class="b-primary" data-toggle="tab" data-target="#powerups">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">tap_and_play</i>
+                  </span>
+                  <span class="nav-text">Power-Up</span>
+                </a>
+              </li>
+              <!-- <li class="nav-header hidden-folded">
+                <span class="text-xs">Game server</span>
+              </li>
+              <li>
+                <a class="b-primary" href="https://amax-emu.com/Dashboard">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">favorite</i>
+                  </span>
+                  <span class="nav-text">Amax Emu</span>
+                </a>
+              </li>
+              <li class="nav-header hidden-folded">
+                <span class="text-xs">Community</span>
+              </li>
+              <li>
+                <a class="b-primary" href="https://discord.gg/blurcommunity">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">favorite</i>
+                  </span>
+                  <span class="nav-text">Blur Community</span>
+                </a>
+              </li> -->
+              <li class="nav-header hidden-folded">
+                <span class="text-xs">Theme Switcher</span>
+              </li>
+              <li>
+                <a class="b-primary" class="b" data-ui-toggle-class="active" data-ui-target="#sw-theme" class="dark-white sw-btn">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="material-icons md-24">settings</i>
+                  </span>
+                  <span class="nav-text">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- content -->
+  <div id="content" class="app-content" role="main">
+    <div class="app-body">
+      <div class="app-header white bg b-b">
+      <div class="navbar" data-pjax>
+      <a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up p-r m-a-0 pull-left text-primary">
+        <i class="ion-navicon"></i>
+      </a>
+      </div>
+      </div>
+
+<!-- ############ PAGE START-->
+  <div class="padding">
+    <div class="row">
+      <br>
+      <div class="box">
+        <img src="images/wiki/blurgames.png" alt="." class="w-full">
+      </div>
+      <div class="col-sm-8 col-lg-9">
+        <div class="tab-content">
+
+          <div class="tab-pane p-v-sm active" id="tab_1">
+            <div class="streamline">
+      <div class="box">
+        <div class="box-header">
+          <h3>Multiplayer</h3>
+          <small class="text-muted">The game can be played with up to four players in split screen, and can be taken online for a maximum of 20 players over the internet, or over LAN in the PC, Xbox 360, and PlayStation 3 versions. In a custom game, options can be set before each match that determine the layout of power-ups, car classes, number of laps, and the car to race. A match type called "World Tour" is essentially a quick play option for players who want to jump into a match. Here, every player is given a random car and thrown into a random series of courses with a standard ruleset. Multiplayer also offers "Team Racing" mode. Two teams (Alpha & Omega) can put themselves head to head either publicly or private. During races, each player accumulates points for their finishing position. While in team racing, powerups will not affect the player's own team members with the exception of Shock. Players can send a racing challenge to an online friend. If the second player beats the time, they can send the updated challenge back. These challenges go back and forth until one person concedes. Players can also use the Share button, and post their achievements to Twitter and Facebook.</small>
+        </div>
+      </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/wiki/amax.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm text-center">
+                  <div class="text-ellipsis"><b>Amax Emu</b></div>
+                </div>
+                <div class="text-center">
+                    <a href="https://amax-emu.com/Dashboard">
+                      <button class="md-btn md-flat m-b-sm w-xs text-primary">Amax Emu</button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/wiki/blur.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm text-center">
+                  <div class="text-ellipsis"><b>Blur Community</b></div>
+                </div>
+                <div class="text-center">
+                    <a href="https://discord.gg/blurcommunity">
+                      <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/wiki/blurwiki.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm text-center">
+                  <div class="text-ellipsis"><b>Blur Wiki</b></div>
+                </div>
+                <div class="text-center">
+                    <a href="https://github.com/blurgame/wiki">
+                      <button class="md-btn md-flat m-b-sm w-xs text-primary">GITHUB</button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+
+		  <div class="tab-pane p-v-sm" id="tab_3">
+        <div class="box-body">
+            <h5 class="m-a-0 text-primary">∞ Class A:</h5>
+          </div>
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/1.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Opel Astra Extreme">Opel Astra Extreme<br>Rank: 1<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/5.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Audi R8 4.2 FSI Quattro">Audi R8 4.2 FSI Quattro<br>Rank: 5<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/9.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford FR-100">Ford FR-100<br>Rank: 9<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/18.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Corvette C3 (Drag)">Corvette C3 (Drag)<br>Rank: 18<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/21.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet Camaro SS (Drag)">Chevrolet Camaro SS (Drag)<br>Rank: 21<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/25.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Mustang GT-R Concept">Ford Mustang GT-R Concept<br>Rank: 25<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/27.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Vauxhall Monaro VXR (Drift)">Vauxhall Monaro VXR (Drift)<br>Rank: 27<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/30.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Viper GTSR">Dodge Viper GTSR<br>Rank: 30<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/32.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Renault Mégane Trophy">Renault Mégane Trophy<br>Rank: 32<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/35.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Nissan Skyline GT-R NISMO Z-tune">Nissan Skyline GT-R NISMO Z-tune<br>Rank: 35<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/40.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Transit Supervan3">Ford Transit Supervan3<br>Rank: 40<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/43.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Corvette C3 (Race)">Corvette C3 (Race)<br>Rank: 43<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/46.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Challenger (Race)">Dodge Challenger (Race)<br>Rank: 46<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/48.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Viper Venom 1000">Dodge Viper Venom 1000<br>Rank: 48<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classA/50.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Koenigsegg CCX-R">Koenigsegg CCX-R<br>Rank: 50<br>Class A</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+		  
+
+      <div class="tab-pane p-v-sm" id="tab_b">
+        <div class="box-body">
+            <h5 class="m-a-0 text-primary">∞ Class B:</h5>
+          </div>
+				
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/1.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="BMW Concept 1 Series tii (Race)">BMW Concept 1 Series tii (Race)<br>Rank: 1<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford F-100 (Off-Road)">Ford F-100 (Off-Road)<br>Rank: 2<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/4.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Focus RS (Race)">Ford Focus RS (Race)<br>Rank: 4<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/7.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Bowler Nemesis">Bowler Nemesis<br>Rank: 7<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/10.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Lotus Exige Cup 260">Lotus Exige Cup 260<br>Rank: 10<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/16.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Volkswagen Scirocco 24">Volkswagen Scirocco 24<br>Rank: 16<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/20.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Challenger SRT8 (Tuner)">Dodge Challenger SRT8 (Tuner)<br>Rank: 20<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/23.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford GT">Ford GT<br>Rank: 23<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/27.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Viper ACR">Dodge Viper ACR<br>Rank: 27<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/33.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Corvette C3 (Rat)">Corvette C3 (Rat)<br>Rank: 33<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/36.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet HHR (Race)">Chevrolet HHR (Race)<br>Rank: 36<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/39.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet Corvette ZR1">Chevrolet Corvette ZR1<br>Rank: 39<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/42.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="BMW X5 xDrive48i M Sport">BMW X5 xDrive48i M Sport<br>Rank: 42<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/49.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Volkswagen Golf W12 650">Volkswagen Golf W12 650<br>Rank: 49<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classB/50.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="BMW M3 E92 (Drift)">BMW M3 E92 (Drift)<br>Rank: 50<br>Class B</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+		  
+
+      <div class="tab-pane p-v-sm" id="tab_c">
+        <div class="box-body">
+            <h5 class="m-a-0 text-primary">∞ Class C:</h5>
+          </div>
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/1.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Audi TTS Coupé">Audi TTS Coupé<br>Rank: 1<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Volkswagen Bettle (Off-Road)">Volkswagen Bettle (Off-Road)<br>Rank: 2<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/4.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet Camaro SS">Chevrolet Camaro SS<br>Rank: 4<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/7.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Bronco (Off-Road)">Ford Bronco (Off-Road)<br>Rank: 7<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/8.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Hummer H2 (Rat)">Hummer H2 (Rat)<br>Rank: 8<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/12.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford F-100 (Rat)">Ford F-100 (Rat)<br>Rank: 12<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/16.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Shelby GT500">Ford Shelby GT500<br>Rank: 16<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/21.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford F-150 SVT Raptor (Off-Road)">Ford F-150 SVT Raptor (Off-Road)<br>Rank: 21<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/24.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Nissan 350Z (Drift)">Nissan 350Z (Drift)<br>Rank: 24<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/26.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Land Rover LRX">Land Rover LRX<br>Rank: 26<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/29.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Hummer H2 (Off-Road)">Hummer H2 (Off-Road)<br>Rank: 29<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/33.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Toyota Supra (Smooth)">Toyota Supra (Smooth)<br>Rank: 33<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/37.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Foose 69 Camaro">Foose 69 Camaro<br>Rank: 37<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/41.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Nissan Navara (Rat)">Nissan Navara (Rat)<br>Rank: 41<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classC/50.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="BMW M3 E92 (Tuner)">BMW M3 E92 (Tuner)<br>Rank: 50<br>Class C</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+
+      <div class="tab-pane p-v-sm" id="tab_d">
+        <div class="box-body">
+            <h5 class="m-a-0 text-primary">∞ Class D:</h5>
+          </div>
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/1.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Audi S3">Audi S3<br>Rank: 1<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Volkswagen Beetle (Rat)">Volkswagen Beetle (Rat)<br>Rank: 2<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/4.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Renault R230 F1 Team R26">Renault R230 F1 Team R26<br>Rank: 4<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/7.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Land Rover Defender SVX">Land Rover Defender SVX<br>Rank: 7<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/10.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Rat Rod">Rat Rod<br>Rank: 10<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/14.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Foose Stallion Ford Mustang">Foose Stallion Ford Mustang<br>Rank: 14<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/17.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="BMW Concept 1 Series tii">BMW Concept 1 Series tii<br>Rank: 17<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/19.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Nissan 350Z NISMO Z-tune">Nissan 350Z NISMO Z-tune<br>Rank: 19<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/23.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Focus RS">Ford Focus RS<br>Rank: 23<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/25.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet Camaro">Chevrolet Camaro<br>Rank: 25<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/28.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Nissan Navara (Off-Road)">Nissan Navara (Off-Road)<br>Rank: 28<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/31.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Challenger SRT8">Dodge Challenger SRT8<br>Rank: 31<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/34.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet Camaro (Rat)">Chevrolet Camaro (Rat)<br>Rank: 34<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/39.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Toyota Supra">Toyota Supra<br>Rank: 39<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/classD/44.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="AC Schnitzer ACS1 Coupé">AC Schnitzer ACS1 Coupé<br>Rank: 44<br>Class D</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane p-v-sm" id="tab_legends">
+        <div class="box-body">
+            <h5 class="m-a-0 text-primary">∞ Legendary:</h5>
+          </div>
+          
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/i.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="AC Schnitzer Legendary ACS1 Coupé">AC Schnitzer Legendary ACS1 Coupé<br>Rank X: I<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/ii.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Chevrolet Legendary Camaro SS">Chevrolet Legendary Camaro SS<br>Rank X: II<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/iii.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Legendary Viper ACR">Dodge Legendary Viper ACR<br>Rank X: III<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/iv.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Vauxhall Legendary Monaro VXR">Vauxhall Legendary Monaro VXR<br>Rank X: IV<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/v.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Dodge Legendary Challenger SRT8">Dodge Legendary Challenger SRT8<br>Rank X: V<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/vi.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Audi Legendary TTS Coupé">Audi Legendary TTS Coupé<br>Rank X: VI<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/vii.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Bowler Legendary Nemesis">Bowler Legendary Nemesis<br>Rank X: VII<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/viii.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Opel Legendary Astra Extreme">Opel Legendary Astra Extreme<br>Rank X: VIII<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/ix.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="BMW Legendary M3 (E92)">BMW Legendary M3 (E92)<br>Rank X: IX<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/legendary/x.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ford Legendary Mustang GT-R Concept">Ford Legendary Mustang GT-R Concept<br>Rank X: X<br>Legendary</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane p-v-sm" id="tab_boss">
+        <div class="box-body">
+            <h5 class="m-a-0 text-primary">∞ Black List:</h5>
+          </div>
+          
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/shannon.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Shannon's Renault R230 F1 Team R26">Shannon's<br>Renault R230 F1 Team R26</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/rhymer.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Rhymer's Chevrolet Camaro SS">Rhymer's<br>Chevrolet Camaro SS</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/natalya.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Natalya's BMW Concept 1 Series tii (Race)">Natalya's<br>BMW Concept 1 Series tii (Race)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/harumi.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Harumi's Nissan Skyline GT-R NISMO Z-tune">Harumi's<br>Nissan Skyline GT-R NISMO Z-tune</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/ayumi.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Ayumi's Nissan Skyline GT-R NISMO Z-tune">Ayumi's<br>Nissan Skyline GT-R NISMO Z-tune</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/carver.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Carver's Dodge Viper GTSR">Carver's<br>Dodge Viper GTSR</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/khan.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Khan's Foose Stallion Ford Mustang">Khan's<br>Foose Stallion Ford Mustang</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/drayke.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Drayke's Hummer H2 (Off-Road)">Drayke's<br>Hummer H2 (Off-Road)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/talon.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Talon's Corvette ZR1">Talon's<br>Corvette ZR1</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/boss/shannons.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis" title="Shannon's Opel Astra Extreme">Shannon's<br>Opel Astra Extreme</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_1">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/amboy.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Amboy</div>
+                  <small class="text-muted"><b>Track:</b> Badlands Traverse</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/amboy2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Amboy</div>
+                  <small class="text-muted"><b>Track:</b> Route 66</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_2">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/bg.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Barcelona Gracia</div>
+                  <small class="text-muted"><b>Track:</b> Catalan Climb</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/bg2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Barcelona Gracia</div>
+                  <small class="text-muted"><b>Track:</b> EI Carmel Heights</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/bg3.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Barcelona Gracia</div>
+                  <small class="text-muted"><b>Track:</b> Passeig de Gracia</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_3">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/bo.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Barcelona Oval</div>
+                  <small class="text-muted"><b>Track:</b> City Breach</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/bo2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Barcelona Oval</div>
+                  <small class="text-muted"><b>Track:</b> Speedway</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_4">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/br.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Brighton</div>
+                  <small class="text-muted"><b>Track:</b> Coastal Cruise</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/br2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Brighton</div>
+                  <small class="text-muted"><b>Track:</b> Promenade Loop</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/br3.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Hackney</div>
+                  <small class="text-muted"><b>Track:</b> Seafront Strip</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_5">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/hack.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Hackney</div>
+                  <small class="text-muted"><b>Track:</b> Central Sprint</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/hack2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Hackney</div>
+                  <small class="text-muted"><b>Track:</b> Shoreditch Sweep</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/hack3.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Brighton</div>
+                  <small class="text-muted"><b>Track:</b> Urban Belt</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+           <div class="tab-pane p-v-sm" id="map_6">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/hollywood.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Hollywood Hills</div>
+                  <small class="text-muted"><b>Track:</b> Downtown Vista</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/hollywood2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Hollywood Hills</div>
+                  <small class="text-muted"><b>Track:</b> Hollywood Rift</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_7">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/docks.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Docks</div>
+                  <small class="text-muted"><b>Track:</b> Cargo Run</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/docks2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Docks</div>
+                  <small class="text-muted"><b>Track:</b> Pacific Reach</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_8">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/downtown.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Downtown</div>
+                  <small class="text-muted"><b>Track:</b> Harbor Freeway</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/downtown2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Downtown</div>
+                  <small class="text-muted"><b>Track:</b> Highrise Ring</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-4">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/downtown3.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Downtown</div>
+                  <small class="text-muted"><b>Track:</b> The Money Run</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_9">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/river.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA River</div>
+                  <small class="text-muted"><b>Track:</b> Concrete Basin</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/river2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA River</div>
+                  <small class="text-muted"><b>Track:</b> Stormdrain Surge</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+          
+          <div class="tab-pane p-v-sm" id="map_10">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/descent.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Mount Haruna</div>
+                  <small class="text-muted"><b>Track:</b> Descent</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_11">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/dumbo.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> NY Dumbo</div>
+                  <small class="text-muted"><b>Track:</b> Brooklyn Tour</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/dumbo2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> NY Dumbo</div>
+                  <small class="text-muted"><b>Track:</b> Manhattan View</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_12">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/rus.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> SanFran Russian Hill</div>
+                  <small class="text-muted"><b>Track:</b> Russian Steppes</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_13">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/sf.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> SanFran Sausalito</div>
+                  <small class="text-muted"><b>Track:</b> Bay Area Tour</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/sf2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> SanFran Sausalito</div>
+                  <small class="text-muted"><b>Track:</b> Golden Gate Rush</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+         <div class="tab-pane p-v-sm" id="map_14">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/tokyo.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Tokyo Shutoko</div>
+                  <small class="text-muted"><b>Track:</b> Bayshore Route</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/race/tokyo2.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Tokyo Shutoko</div>
+                  <small class="text-muted"><b>Track:</b> Wangan-sen</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_15">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/motormach/ambo.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Amboy</div>
+                  <small class="text-muted"><b>Track:</b> The Dust Bowl</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_16">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/motormach/bar.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> Barcelona</div>
+                  <small class="text-muted"><b>Track:</b> La Carretera</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="map_17">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/motormach/8.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Downtown</div>
+                  <small class="text-muted"><b>Track:</b> Figure of 8</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-6">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/maps/motormach/heights.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis"><b>Location:</b> LA Downtown</div>
+                  <small class="text-muted"><b>Track:</b> LA Heights</small>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="powerups">
+
+          <div class="col-md-12">
+          <div class="row">
+
+             <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Barge.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Barge</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Bolt.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Bolt</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Nitro.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Nitro</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Mine.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Mine</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Repair.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Repair</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Shunt.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Shunt</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Shock.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Shock</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="box p-a-xs">
+                <a href="#"><img src="images/powerups/Shield.png" alt="" class="img-responsive"></a>
+                <div class="p-a-sm">
+                  <div class="text-ellipsis">Power Up<br>Shield</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+				
+          </div>
+
+          <div class="tab-pane p-v-sm" id="modshop">
+
+          <div class="col-sm-6">
+      <div class="list box">
+        <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Stable_Frame.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Stable Frame</a>
+            <small class="block text-muted">You take less damage from collisions and are immune to Battering Ram<br>Rank: 3</small>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Showy_Flourish.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Showy Flourish</a>
+            <small class="block text-muted">Gain bonus fans each time you damage an opponent with power-ups<br>Rank: 6</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Iron_Fist.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Iron Fist</a>
+            <small class="block text-muted">Your Shunt attacks deal more damage<br>Rank: 20</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Drifter.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Drifter</a>
+            <small class="block text-muted">You receive a Nitro each time you perform a Super Drift<br>Rank: 32</small>
+          </div>
+        </div>
+        </div>
+
+        <div class="list box">
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Safety_Net.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Safety Net</a>
+            <small class="block text-muted">Any Power-up that hits you while your Shield is active repairs a small amount of damage<br>Rank: 3</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Shielding_Efficiency.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Shielding Efficiency</a>
+            <small class="block text-muted">Your Shield is active for longer and can sustain an extra hit from a Shock blast<br>Rank: 9</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Scrambler.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Scrambler</a>
+            <small class="block text-muted">Reverse Power-up attacks temporarily block your opponents from firing Power-ups<br>Rank: 22</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Magnetic_Field.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Magnetic Field</a>
+            <small class="block text-muted">You can pick up Power-ups from further away<br>Rank: 35</small>
+          </div>
+        </div>
+        </div>
+
+        <div class="list box">
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Laser_Sight.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Laser Sight</a>
+            <small class="block text-muted">Adds a laser sight to assist with aiming Bolt shots<br>Rank: 3</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/ECM.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">ECM</a>
+            <small class="block text-muted">Shunts are easier to evade<br>Rank: 10</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Vampire_Wreck.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Vampiric Wreck</a>
+            <small class="block text-muted">Repairs your vehicle each time you Wreck an opponent<br>Rank: 25</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Last_Grasp.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Last Gasp</a>
+            <small class="block text-muted">Primes your car with explosives that you can detonate after you get Wrecked<br>Rank: 38</small>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="list box">
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Battering_Ram.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Battering Ram</a>
+            <small class="block text-muted">Increases the force of your rams and deals extra damage<br>Rank: 3</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Titanium_Armor.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Titanium Armor</a>
+            <small class="block text-muted">Your vehicle takes half damage from standard power-up attacks<br>Rank: 13</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Front_Runner.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Front Runner</a>
+            <small class="block text-muted">You receive a Nitro for every lap you complete<br>Rank: 28</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Jump_The_Gun.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-info">Jump The Gun</a>
+            <small class="block text-muted">You respawn faster and get a speed boost after being Wrecked or Reset<br>Rank: 45</small>
+          </div>
+        </div>
+        </div>
+
+        <div class="list box">
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Adaptive_Shielding.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Adaptive Shielding</a>
+            <small class="block text-muted">Shunts, Barges and Mines that hit your Shield are converted into Power-ups<br>Rank: 3</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Splash_Damage.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Splash Damage</a>
+            <small class="block text-muted">Increases the blast radius of your Barge attacks<br>Rank: 17</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Shielded_Bay.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Shielded Bay</a>
+            <small class="block text-muted">You are immune to Scrambler attacks and may safely pick up Decoy Power-ups<br>Rank: 22</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Decoy_Drop.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-warning">Decoy Drop</a>
+            <small class="block text-muted">Dropped Power-ups become Decoys that explode when picked up by other drivers<br>Rank: 40</small>
+          </div>
+        </div>
+        </div>
+
+        <div class="list box">
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Fan_Favourite.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Fan Favorite</a>
+            <small class="block text-muted">Gain extra Fans for your Finish Bonus<br>Rank: 3</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Bribe.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Bribe</a>
+            <small class="block text-muted">Get a random Power-up at the start as well as each time you respawn after being Wrecked<br>Rank: 15</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Mastermine.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Mastermine</a>
+            <small class="block text-muted">Drive close by Mines to detonate them into multiple explosive fragments<br>Rank: 30</small>
+          </div>
+        </div>
+
+         <div class="list-item">
+          <div class="list-left">
+            <img alt="." src="images/modshop/Silent_Running.png" class="w-40">
+          </div>
+          <div class="list-body">
+            <a class="_500 text-success">Silent Running</a>
+            <small class="block text-muted">Turns your car invisible unless you fire or take damage<br>Rank: 47</small>
+          </div>
+        </div>
+
+        </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-3">
+        <div>
+          <!-- <div class="box">
+              <div class="box-header">
+                <h3 class="text-center text-primary">ッ</h3>
+				<p class="text-primary">Hi guys!<br>Here i publish my unique works that i made in the game.<br>Thanks ;)</p>
+              </div>
+          </div>
+
+           <div class="">
+					    	<div class="item r" data-id="item-1" data-src="">
+								<div class="item-media item-media-4by3">
+									<a class="item-media-content" style="background-image: url('images/ml.png');"></a>
+								</div>
+								<div class="item-info">
+									<div class="item-overlay bottom text-center">
+									</div>
+									<div class="item-overlay bottom text-right">
+										<a href="#" class="btn-favorite"><i class="material-icons">file_download</i></a>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+			<div class="col-sm-12">
+                <div class="box">
+                  <div class="box-body text-center r-t">
+                    <h6 class="text-u-c p-v-sm m-a-0 m-t">About</h6>
+                    <h3 class="m-a-0 m-l m-v">
+                      <sup>∞</sup>
+                      <span class="text-2x text-primary">ッ</span>
+                      <span class="text-xs">WIKI</span>
+                    </h3>
+                  </div>
+
+                  <div class="">
+                    <div class="item r" data-id="item-1" data-src="">
+                    <div class="item-media item-media-4by3">
+                      <a class="item-media-content" style="background-image: url('images/wiki/logo.png');"></a>
+                    </div>
+                    <div class="item-info">
+                      <div class="item-overlay bottom text-center">
+                      </div>
+                      <div class="item-overlay bottom text-right">
+                        <a href="#" class="btn-favorite"></a>
+              
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <h3>Blur</h3>
+                    <small class="text-primary">Developer(s): Bizarre Creations<br>Publisher(s): Activision<br>Engine: Horizon</small>
+                    <p></p>
+                    <small class="text-muted">is a 2010 arcade-style racing vehicular combat video game for Microsoft Windows, PlayStation 3 and Xbox 360. It was developed by Bizarre Creations and published by Activision. Blur features a racing style that incorporates real world cars and locales with arcade style handling and vehicular combat.</small>
+                  </div>
+
+                  <!-- <div class="text-center">
+                    <a href="https://discord.gg/msf3yVtvXS">
+                      <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                    </a>
+                  </div> -->
+
+                  <br>
+                </div>
+              </div>
+			  
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <div class="footer box text-info-hover box">
+  	<div class="container">
+  		<div class="p-y-lg">
+  			<div class="m-b-lg text-sm">
+  				
+  				<div class="pull-right pull-none-xs m-b">
+  					<span class="text-primary"><b>Blur Wiki based on aside &copy; All rights reserved!</b></span>
+  				</div>
+  				<div>
+
+  				</div>
+  	    </div>
+  		</div>
+  	</div>
+  </div>
+
+<!-- ############ LAYOUT END-->
+
+ <!-- ############ SWITHCHER START-->
+    <div id="switcher">
+      <div class="switcher black" id="sw-theme">
+        <!-- <a href="#" data-ui-toggle-class="active" data-ui-target="#sw-theme" class="dark-white sw-btn">
+          <i class="fa fa-gear text-muted"></i>
+        </a> -->
+        <div class="box-header">
+          <strong>Theme Switcher</strong>
+          <a class="b" data-ui-toggle-class="active" data-ui-target="#sw-theme" class="dark-white sw-btn">
+            <span class="nav-icon text-white no-fade">
+              <i class="material-icons md-24">close</i>
+            </span>
+          </a>
+        </div>
+        <div class="box-divider"></div>
+        <div class="box-body">
+          <p id="settingLayout" class="hidden-md-down">
+            <label class="md-check m-y-xs" data-target="folded">
+              <input type="checkbox">
+              <i></i>
+              <span>Folded Aside</span>
+            </label>
+            <label class="m-y-xs pointer" data-ui-fullscreen data-target="fullscreen">
+              <span class="fa fa-expand fa-fw m-r-xs"></span>
+              <span>Fullscreen Mode</span>
+            </label>
+          </p>
+          <p>Colors:</p>
+          <p data-target="color">
+            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+              <input type="radio" name="color" value="primary">
+              <i class="primary"></i>
+            </label>
+            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+              <input type="radio" name="color" value="accent">
+              <i class="accent"></i>
+            </label>
+            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+              <input type="radio" name="color" value="warn">
+              <i class="warn"></i>
+            </label>
+          </p>
+          <p>Themes:</p>
+          <div data-target="bg" class="clearfix">
+            <label class="radio radio-inline m-a-0 ui-check ui-check-lg">
+              <input type="radio" name="theme" value="">
+              <i class="light"></i>
+            </label>
+            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-lg">
+              <input type="radio" name="theme" value="black">
+              <i class="black"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ############ SWITHCHER END-->
+  </div>
+
+<!-- build:js scripts/app.min.js -->
+<!-- jQuery -->
+  <script src="libs/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="libs/tether/dist/js/tether.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="libs/PACE/pace.min.js"></script>
+  <script src="libs/jquery-pjax/jquery.pjax.js"></script>
+  <script src="libs/blockUI/jquery.blockUI.js"></script>
+  <script src="libs/jscroll/jquery.jscroll.min.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-modal.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-list.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+  <script src="scripts/ui-taburl.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
